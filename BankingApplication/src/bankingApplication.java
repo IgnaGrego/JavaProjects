@@ -4,7 +4,7 @@ public class bankingApplication {
 	
 	public static void main(String[] args) {
 		
-		BankAccount obj1 = new BankAccount ("IGNACIO","BA0001");
+		BankAccount obj1 = new BankAccount ("XYZ","BA0001");
 		obj1.showMenu();
 		
 		
@@ -57,7 +57,7 @@ class BankAccount {
 		}
 		else
 		{
-		    System.out.println("No existen operaciones de transacciÛnes");
+		    System.out.println("No existen operaciones de transacci√≥nes");
 		}
 		
 	}
@@ -72,14 +72,14 @@ class BankAccount {
 		System.out.println("\n");
 		System.out.println("A. Chequear Balance");
 		System.out.println("B. Depositar");
-		System.out.println("C. PrÈstamos");
+		System.out.println("C. Pr√©stamos");
 		System.out.println("D. Transacciones Previas");
 		System.out.println("E. Salir");
 		
 		do
 		{  
 			System.out.println("=======================================================");
-			System.out.println("Ingres· una opciÛn");
+			System.out.println("Ingres√° una opci√≥n");
 			System.out.println("=======================================================");
 			option = scanner.next().charAt(0);
 			System.out.println("\n");
@@ -98,7 +98,7 @@ class BankAccount {
 				
 			case 'B':
 				System.out.println("--------------------------------");
-				System.out.println("Ingres· un monto a depositar = ");
+				System.out.println("Ingres√° un monto a depositar = ");
 				System.out.println("--------------------------------");
 				int amount = scanner.nextInt();
 				deposit(amount);
@@ -107,7 +107,7 @@ class BankAccount {
 				
 			case 'C':
 				System.out.println("--------------------------------");
-				System.out.println("Ingrese prÈstamo a recibir = ");
+				System.out.println("Ingrese pr√©stamo a recibir = ");
 				System.out.println("--------------------------------");
 				int amount2 = scanner.nextInt();
 				withdraw(amount2);
@@ -127,7 +127,7 @@ class BankAccount {
 				
 				
 			default:
-				System.out.println("Opcion inv·lida. Por favor intentar nuevamente.");
+				System.out.println("Opcion inv√°lida. Por favor intentar nuevamente.");
 				break;
 				
 			}
